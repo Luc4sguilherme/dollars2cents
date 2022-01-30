@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #BDBDBD;
+}
+
+.container {
+  background: #448AFF;
+  width: 45%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #212121;
+}
+
+.coins {
+  display: flex;
+  align-items: flex-end;
+  height: 50%;
+}
+
+.coin {
+  margin: 0 15px;
+}
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#number-input {
+  border: #000 1px solid;
+  outline: 0;
+  border-radius: 10px;
+  width: 50%;
+  height: 40px;
+  padding: 5px 10px;
+  background: #F5F5F5;
+}
+
+#number-input:hover {
+  background: #BDBDBD;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 1250px)  {
+  .coins {
+    flex-direction: column;
+    justify-content: end;
+    text-align: start;
+  }
+
+  .coin {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px)  { 
+  h1 {
+    font-size: 2rem;
+  }
+
+  .coin{
+    font-size: 1rem;
+  }
+
+  .input-wrapper {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 730px)  { 
+  h1 {
+    font-size: 1.7rem;
+  }
+}
