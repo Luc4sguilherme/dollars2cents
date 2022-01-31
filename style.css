@@ -97,8 +97,20 @@ input[type=number] {
   }
 }
 
-@media only screen and (max-width: 730px)  { 
+@media only screen and (max-width: 850px)  { 
   h1 {
     font-size: 1.7rem;
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .coins {
+    display: flex;
+    align-items: flex-end;
+    height: 25%;
   }
 }
